@@ -1,11 +1,11 @@
 define(['lib/Base64'], function (Base64) {
   function backendServiceFactory($http, $q, $waitDialog) {
     var defaultErrorCodeMessageMapping = {
-      401:'Zugriff verweigert.',
-      0:'Ein unbekannter Fehler ist aufgetreten.'
+      401:'401 error.',
+      0:'0 error.'
     };
 
-    var backendBaseUri = '/rylc-html5/api';
+    var backendBaseUri = '/api';
 
     var carTypesPromise, citiesPromise, authorizationHeader, _authenticationCustomer;
 
